@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     private Vector3 cameraPosVector = new Vector3(0, 10, -10);
     private Vector3 cameraRotVector = new Vector3(45, 0, 0);
 
-    private Vector3 screenCenter = new Vector3(1080 / 2, 607 / 2, 0);
+    private Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, 0);
     public float horzRotAngle = 0;
 
     // Start is called before the first frame update
@@ -22,16 +22,16 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        // Mouse position: bottom left corner is (0, 0), top right is (1080, 607)
+        // Mouse position: bottom left corner is (0, 0), top right is (Screen.width, Screen.height)
         Vector3 mousePos = Input.mousePosition - screenCenter;
 
-        if (mousePos.x < -1080 / 2)
+        if (mousePos.x < -Screen.width / 2)
         {
-            mousePos.x = -1080 / 2;
+            mousePos.x = -Screen.width / 2;
         }
-        else if (mousePos.x > 1080 / 2) 
+        else if (mousePos.x > Screen.width / 2) 
         {
-            mousePos.x = 1080 / 2;
+            mousePos.x = Screen.width / 2;
         }
 
         // Determine rotation angle based on mouse position

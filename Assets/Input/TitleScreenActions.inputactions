@@ -1,0 +1,34 @@
+{
+    "name": "TitleScreenActions",
+    "maps": [
+        {
+            "name": "ReturnToGame",
+            "id": "915f5eba-143e-47a4-892c-0a0f4cbea2a1",
+            "actions": [
+                {
+                    "name": "KeyPress",
+                    "type": "Button",
+                    "id": "16b30b9c-511e-4a50-888f-df128547dffe",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "75bd9898-6c3c-4a0c-a03a-b2901ceffd11",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "KeyPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
